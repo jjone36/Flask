@@ -5,8 +5,10 @@ This tutorial is consist of 13 courses learning how to build a full-feature Flas
 
 <br>
 
-* **course_1 :** Basic templates, layout and inheritance, block content box, add bootstrap & CSS
+* **[course_1](https://github.com/jjone36/Flask/tree/master/course_1) :** Basic templates, layout and inheritance, block content box, add bootstrap & CSS
 
-* **course_2 :** forms.py > add '@app.route' > add register/login forms
+* **[course_2](https://github.com/jjone36/Flask/tree/master/course_2) :** forms.py > add *'@app.route'* > add register/login forms
 
-* **course_3 :** SQLAlchemy database 
+* **[course_3](https://github.com/jjone36/Flask/tree/master/course_3) :** SQLAlchemy database > create db tables *User*, *Post* in **models.py** > separate the flask running part, the app init part, and the routes part from **hello.py** > make linkages between the files by "from *hello* import *(module)*"
+
+* **[course_4](https://github.com/jjone36/Flask/tree/master/course_4) :**  

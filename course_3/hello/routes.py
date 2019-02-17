@@ -1,9 +1,8 @@
-from flask import Flask, render_template, url_for, flash, redirect
-from flask_sqlalchemy import SQLAlchemy 
-from forms import RegistrationForm, LoginForm
-app = Flask(__name__)
+from flask import render_template, url_for, flash, redirect
+from hello import app 
+from hello.forms import RegistrationForm, LoginForm
+from hello.models import User, Post
 
-app.config['SECRET_KEY'] = 'cc0e6a679a44e60a2ac2a544f8b84d2b'
 
 posts = [
     {
@@ -51,7 +50,3 @@ def login():
         else:
             flash('Login Unsuccessful. Please check email and password', 'danger')
     return render_template('login.html', title = 'Login', form = form)
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
